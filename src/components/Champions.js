@@ -6,7 +6,7 @@ import banner from '../images/banner.webp'
 const Champions = ({ championsArray }) => {
 
   const [ filteredChampions, setFilteredChampions ] = useState([])
-  const [ filters, setFilters ] = useState({ role: '', searchTerm: '' })
+  const [ filters, setFilters ] = useState({ role: 'All', searchTerm: '' })
 
   // Handle updates to select and text input
   const handleFilterChange = (event) => {
